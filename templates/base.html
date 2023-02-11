@@ -23,11 +23,16 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
       rel="stylesheet"
     />
+    <style>
+      body{
+        overflow-x:hidden;
+      }
+    </style>
   </head>
   <body dir="rtl" class="hold-transition sidebar-mini">
-    {% include 'nav_sidebar.html' %}
+    {% include 'parts/nav_sidebar.html' %}
     {% block content %}{% endblock content %}
-    {% include 'footer.html' %}
+    {% include 'parts/footer.html' %}
     </div>
     <!-- REQUIRED SCRIPTS -->
     <script src="{% static 'plugins/jquery_datepacker/jquery_ui.js' %}"></script>
